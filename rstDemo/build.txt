@@ -1,2 +1,0 @@
-# Pro build spustit prikaz:
-rst2html.py demo.rst demo.html
