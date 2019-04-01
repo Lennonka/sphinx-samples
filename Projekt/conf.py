@@ -72,6 +72,9 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store', '.git', 'README.rst']
 # The name of the Pygments (syntax highlighting) style to use.
 pygments_style = 'default'
 
+# Formát datumu (today)
+today_fmt = '%d.%m.%Y'
+
 # Globální substituce
 rst_prolog = """
 .. |author| replace:: {}
@@ -124,11 +127,11 @@ html_static_path = ['_static']
 #
 # html_sidebars = {}
 
-# Moje přizpůsobení
-#html_css_files = ['moje.css']
-#html_secnumber_suffix = ' '
-#html_title = project + ' v' + version
-#html_last_updated_fmt = today_fmt
+# Přizpůsobení
+html_css_files = ['moje.css']
+html_secnumber_suffix = ' '
+html_title = project + ' v' + version
+html_last_updated_fmt = today_fmt
 #html_show_copyright = False # např. pro copyleft nebo public domain projekty
 
 # -- Options for LaTeX output ------------------------------------------------
@@ -157,14 +160,15 @@ latex_elements = {
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
     # default grouping
-    (master_doc, 'Projekt.tex', 'Projekt Documentation', 'Autor', 'manual', False),
-    # grouping by book
-    #('Kniha/index', 'Projekt-Kniha.tex', 'Kniha o Projektu', author, 'manual', False)
+    #(master_doc, 'Projekt.tex', 'Projekt Documentation', 'Autor', 'manual', False),
+    # # Přizpůsobení - grouping by book
+    ('Kniha/index', 'Projekt-Kniha.tex', 'Kniha o Projektu', author, 'manual', False)
 ]
 
+# Přizpůsobení
 # Topmost sectioning unit: 'part', 'chapter' or 'section' (default)
-#latex_toplevel_sectioning = 'chapter'
+latex_toplevel_sectioning = 'chapter'
 # Printed - add page references after internal references
-#latex_show_pagerefs = True
+latex_show_pagerefs = True
 # Printed - display URLs: 'no' (default), 'footnote', 'inline'
-#latex_show_urls = 'footnote'
+latex_show_urls = 'footnote'

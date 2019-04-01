@@ -15,8 +15,7 @@ Znaky doporučené pro vyznačování nadpisů: ``= - ` : . ' " ~ ^ _ * + #``
    :EXTRA: Něco extra!
 
 .. contents:: Lokální obsah
-
-..   :local:
+   :local:
    :backlinks: none
 
 Název sekce

@@ -7,7 +7,7 @@ Dokumentace projektu |project| |version|
 ========================================
 
 :Datum vydání: |today|
-:Autor: |author|
+:Vydala: |author|
 
         (tohle jsou bibliografická pole)
 
@@ -26,10 +26,9 @@ Dokumentace může obsahovat více knih.
 
    Kniha/index
 
-
 ..
-   Indices and tables
-   ==================
+   Rejstříky
+   =========
 
    * :ref:`genindex`
    * :ref:`modindex`
