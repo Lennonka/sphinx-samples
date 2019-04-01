@@ -14,14 +14,15 @@
 #
 # import os
 # import sys
+import time # pro zjisteji aktualniho casu
 # sys.path.insert(0, os.path.abspath('.'))
 
 
 # -- Project information -----------------------------------------------------
 
-project = 'Projekt'
-copyright = '2018, Autor'
-author = 'Autor'
+project = 'MůjSoftware'
+author = 'MojeSpolečnost, a.s.'
+copyright = '2018–{}, {}'.format(time.localtime().tm_year, author)
 
 # The short X.Y version
 version = '1.0'
@@ -73,8 +74,10 @@ pygments_style = 'default'
 
 # Globální substituce
 rst_prolog = """
-.. |author| replace:: {author}
-""".format(author=author)
+.. |author| replace:: {}
+
+.. |project| replace:: {}
+""".format(author, project)
 
 rst_epilog = """
 .. |lpage| raw:: latex
@@ -153,7 +156,8 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'Projekt.tex', 'Projekt Documentation', 'Autor', 'manual'), # default grouping
+    # default grouping
+    (master_doc, 'Projekt.tex', 'Projekt Documentation', 'Autor', 'manual'),
     # grouping by book
     #('Kniha/index', 'Projekt-Kniha.tex', 'Kniha o Projektu', author, 'manual', False)
 ]

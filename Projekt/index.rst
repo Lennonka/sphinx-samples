@@ -3,11 +3,13 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Dokumentace Projektu
-====================
+Dokumentace projektu |project| |version|
+========================================
 
-:Verze: |version|
+:Datum vydání: |today|
 :Autor: |author|
+
+        (tohle je bibliografické pole)
 
 Dokumentace může obsahovat více knih.
 

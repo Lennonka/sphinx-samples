@@ -17,9 +17,13 @@ Odstavce
 --------
 
 Odstavec je základ.
+Text odstavce musí být zarovnán vlevo na stejné úrovni.
 
 Další odstavec musí být oddělen aslespoň jedním prázdným řádkem.
 Odstavce nezachovávají zalomení řádků.
+
+Pokud chcete řádek zalomit natvrdo, |br| |lbr|
+musíte použít *raw* substituci pro každý výstupní formát zvlášť.
 
 Odstavce mohou obsahovat :doc:`řádkové prvky jako třeba odkaz <Inline>`.
 
@@ -57,7 +61,8 @@ Nečíslovaný seznam: [#lists]_
 
       (i) (lower roman)
 
-          A. upper alpha. (po tuto úroveň to zvládne LaTeX)
+          A. upper alpha.
+             (Po tuto úroveň to zvládne LaTeX ve výchozím nastavení.)
 
 ..             I) upper roman)
 
@@ -75,9 +80,9 @@ Nečíslovaný seznam: [#lists]_
 
    iv. iv
 
-#. List items may also be auto-enumerated.
+#. List items may also be auto-numbered.
 
-.. [#lists] Výsledné odrážkování nebo číslování seznamů závisí na stylu
+.. [#lists] Styl výsledného odrážkování nebo číslování seznamů závisí na stylu
    výstupního formátu.
 
 Obrázky
@@ -177,7 +182,7 @@ Surový obsah
 
       \rule{0.5cm}{0.5cm}
 
-Surová data lze i načíst ze souboru::
+Surová data lze i načíst ze souboru, např.::
 
    .. raw:: html
       :file: inclusion.html

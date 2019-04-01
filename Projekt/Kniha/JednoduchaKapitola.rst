@@ -8,6 +8,8 @@ Jednoduchá kapitola
 
 :doc:`Blok <Prvky/Bloky>`\ +
 
+Znaky doporučené pro vyznačování nadpisů: ``= - ` : . ' " ~ ^ _ * + #``
+
 .. only:: extra
 
    :EXTRA: Něco extra!
