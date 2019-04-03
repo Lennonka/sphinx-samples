@@ -1,5 +1,6 @@
-Vzorový projekt pro dokumentování ve Sphinx
+Vzorové projekty pro dokumentování ve Sphinx
 ============================================
 
-* `Dokumentace Sphinx 1.8 <https://www.sphinx-doc.org/en/1.8>`_
-* `FRED Documentation (GitHub Repo) <https://github.com/CZ-NIC/fred-docs>`_
+* `Dokumentace Sphinx Doc (anglicky) <https://www.sphinx-doc.org/>`_
+* `Přehled rozšíření a dalších zdrojů pro Sphinx Doc (anglicky) <https://github.com/yoloseem/awesome-sphinxdoc>`_
+* `FRED Documentation (ukázka dokumentace z reálného života, anglicky) <https://github.com/CZ-NIC/fred-docs>`_
