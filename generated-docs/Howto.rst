@@ -7,6 +7,8 @@ Tato sekce shrnuje základní postup pro generování dokumentace z kódu v Pyth
 Python obsahuje podporu pro dokumentování API přímo v kódu zvanou *docstrings*
 [DOCSTR]_. *Docstrings* se mohou vztahovat k balíku, modulu, třídě nebo funkci.
 
+Jak dokumentovat Pythoní kód viz např. článek https://realpython.com/documenting-python-code/.
+
 .. Important::
 
    Pokud mají dokumentované moduly externí závislosti, musí být nainstalované!

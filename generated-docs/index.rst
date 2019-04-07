@@ -4,6 +4,8 @@
 Ukázka generované dokumentace ``apidoc``
 ========================================
 
+Tento příklad ukazuje, jak vypadá dokumentace generovaná pomocí nástroje Sphinx.
+
 .. toctree::
    :maxdepth: 2
    :caption: Obsah:
