@@ -9,7 +9,12 @@ Dokumentace projektu |project| |version|
 :Datum vydání: |today|
 :Autor: |author|
 
-        (tohle je bibliografické pole)
+        (tohle jsou bibliografické pole)
+
+.. Note:: Toto je ukázkový projekt pro dokumentování pomocí nástroje
+  Sphinx Doc, který by časem mohl sloužit jako tutoriál ke Sphinx v češtině.
+
+  Zdroj a další info: https://github.com/Lennonka/sphinx-samples
 
 Dokumentace může obsahovat více knih.
 
