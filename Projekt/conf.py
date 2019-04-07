@@ -144,7 +144,8 @@ latex_elements = {
     # 'pointsize': '10pt',
 
     # Additional stuff for the LaTeX preamble.
-    # 'preamble': '',
+    # Cesky odkaz na stranu
+    'preamble': '\\addto\\extrasczech{\\def\\pageautorefname{strana}}',
 
     # Latex figure (float) alignment
     # 'figure_align': 'htbp',
