@@ -43,10 +43,10 @@ today_fmt = '%d.%m.%Y'
 extensions = [
     'sphinx.ext.ifconfig',
     'sphinx.ext.todo',
-    'sphinxcontrib.plantuml'
+    #'sphinxcontrib.plantuml'
 ]
 
-plantuml = 'java -jar /usr/share/plantuml/plantuml.jar'
+#plantuml = 'java -jar /usr/share/plantuml/plantuml.jar'
 
 todo_include_todos = True
 
