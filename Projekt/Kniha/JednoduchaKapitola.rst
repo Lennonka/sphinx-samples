@@ -10,7 +10,7 @@ Jednoduchá kapitola
 
 Znaky doporučené pro vyznačování nadpisů: ``= - ` : . ' " ~ ^ _ * + #``
 
-.. only:: extra
+.. only:: extra and format_html
 
    :EXTRA: Něco extra!
 
@@ -38,3 +38,13 @@ Další sekce
 -----------
 
 :doc:`Blok <Prvky/Bloky>`\ +
+
+.. todo:: Něco je potřeba tady udělat.
+
+Viz :doc:`/TODOs`.
+
+.. uml::
+
+   Alice -> Bob: Hi!
+   Alice <- Bob: How are you?
+

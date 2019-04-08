@@ -29,7 +29,7 @@ version = '1.0'
 # The full version, including alpha/beta/rc tags
 release = version
 
-#today_fmt = '%d.%m.%Y'
+today_fmt = '%d.%m.%Y'
 
 # -- General configuration ---------------------------------------------------
 
@@ -43,7 +43,12 @@ release = version
 extensions = [
     'sphinx.ext.ifconfig',
     'sphinx.ext.todo',
+    'sphinxcontrib.plantuml'
 ]
+
+plantuml = 'java -jar /usr/share/plantuml/plantuml.jar'
+
+todo_include_todos = True
 
 # Add any paths that contain templates here, relative to this directory.
 templates_path = ['_templates']
@@ -93,7 +98,7 @@ rst_epilog = """
 """
 
 # IFconfig - only
-#tags.add('extra')
+tags.add('extra')
 
 # -- Options for HTML output -------------------------------------------------
 
@@ -107,7 +112,9 @@ html_theme = 'divio_docs_theme'
 # further.  For a list of options available for each theme, see the
 # documentation.
 #
-# html_theme_options = {}
+html_theme_options = {
+  #'nosidebar': True,
+}
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
@@ -125,11 +132,11 @@ html_static_path = ['_static']
 # html_sidebars = {}
 
 # Moje přizpůsobení
-#html_css_files = ['moje.css']
-#html_secnumber_suffix = ' '
-#html_title = project + ' v' + version
-#html_last_updated_fmt = today_fmt
-#html_show_copyright = False # např. pro copyleft nebo public domain projekty
+html_css_files = ['moje.css']
+html_secnumber_suffix = ' '
+html_title = project + ' v' + version
+html_last_updated_fmt = today_fmt
+html_show_copyright = False # např. pro copyleft nebo public domain projekty
 
 # -- Options for LaTeX output ------------------------------------------------
 
@@ -141,14 +148,14 @@ latex_elements = {
     # 'pointsize': '10pt',
 
     # Additional stuff for the LaTeX preamble.
-    # 'preamble': '',
+    'preamble': '\\addto\\extrasczech{\\def\\pageautorefname{strana}}',
 
     # Latex figure (float) alignment
     # 'figure_align': 'htbp',
 
     ###
     #'papersize': 'a4paper',
-    #'fontpkg': '\\usepackage[sfdefault]{roboto}',
+    'fontpkg': '\\usepackage[sfdefault]{roboto}',
     #'fncychap': '',
 }
 
@@ -159,12 +166,12 @@ latex_documents = [
     # default grouping
     (master_doc, 'Projekt.tex', 'Projekt Documentation', 'Autor', 'manual', False),
     # grouping by book
-    #('Kniha/index', 'Projekt-Kniha.tex', 'Kniha o Projektu', author, 'manual', False)
+    ('Kniha/index', 'Projekt-Kniha.tex', 'Kniha o Projektu', author, 'manual', False)
 ]
 
 # Topmost sectioning unit: 'part', 'chapter' or 'section' (default)
-#latex_toplevel_sectioning = 'chapter'
+latex_toplevel_sectioning = 'chapter'
 # Printed - add page references after internal references
-#latex_show_pagerefs = True
+latex_show_pagerefs = True
 # Printed - display URLs: 'no' (default), 'footnote', 'inline'
-#latex_show_urls = 'footnote'
+latex_show_urls = 'footnote'

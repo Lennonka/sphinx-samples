@@ -111,3 +111,6 @@ Domény
    :param str ppp: Popis parametru
 
 Reference na :py:func:`pyfunc` (název funkce uvést bez závorek).
+
+
+

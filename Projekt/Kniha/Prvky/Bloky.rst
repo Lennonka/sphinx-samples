@@ -1,3 +1,8 @@
+
+.. only:: latex
+
+   |lpage|
+
 Blokové prvky
 =============
 
