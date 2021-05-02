@@ -11,14 +11,10 @@ python:
   install:
     - requirements: requirements.txt
 
-# Builder
-builder:
-  image: stable
-
 # Build documentation in the Projekt/ directory with Sphinx
 sphinx:
   configuration: Projekt/conf.py
 
 # Optionally build your docs in additional formats such as PDF and ePub
 formats:
-  - pdf
+  - all
